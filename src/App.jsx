@@ -17,7 +17,7 @@ const sendingMessage = async (message, nextStep) => {
     alert("MESSAGE IS REQUIRED ")
   }
 
-  let response = await fetch(" https://https://special-project-three.vercel.app/api/send", {
+  let response = await fetch("https://special-project-three.vercel.app/api/send", {
     method: 'POST',
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message })
