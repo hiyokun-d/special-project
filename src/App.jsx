@@ -17,7 +17,7 @@ const sendingMessage = async (message, nextStep) => {
     alert("MESSAGE IS REQUIRED ")
   }
 
-  let response = await fetch("https://special-project-three.vercel.app/api/send", {
+  let response = await fetch("/send", {
     method: 'POST',
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message })
@@ -718,7 +718,7 @@ function App() {
                 }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
-                TERKIRIM!!!
+                Okayyy, that's it
               </motion.h1>
               <p className="">Selamat Ulang tahun yaaa</p>
               <p className="text-gray-600 text-sm mb-6">Kalo mau mulai dari awal bisa pencet yang bawah</p>
